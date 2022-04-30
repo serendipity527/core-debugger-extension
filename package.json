@@ -1,5 +1,5 @@
 {
-  "name": "core-debugger-extension",
+	"name": "core-debugger-extension",
 	"displayName": "core-debugger-extension",
 	"description": "",
 	"version": "0.0.1",
@@ -10,14 +10,19 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:core-debugger-extension.helloWorld"
+		"onCommand:core-debugger-extension.helloWorld",
+		"onCommand:code-debugger-extension.webPanel"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
+		"commands": [{
 				"command": "core-debugger-extension.helloWorld",
 				"title": "Hello World"
+			},
+			{
+				"command": "code-debugger-extension.webPanel",
+				"title": "webPanel-title",
+				"category": "webPanel-category"
 			}
 		]
 	},
